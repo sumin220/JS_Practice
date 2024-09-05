@@ -28,3 +28,19 @@
 //     i++;
 // }
 // while(i< 10);
+
+const locations = ['서울', '부산', '경기도', '대구'];
+
+for(let i = 0; i< locations.length; i++) {
+    console.log(locations[i]);
+}
+
+//foreach
+locations.forEach(function(location, index, array){
+    console.log(`index: ${index}, value: ${location}`);
+})
+
+//map
+locations.map(function(location, index, array){
+    console.log(location)
+})
