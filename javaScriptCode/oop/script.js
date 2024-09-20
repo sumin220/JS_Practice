@@ -41,10 +41,20 @@
 //     }
 // }
 
-let user = {
-    name: "John",
-    age: 45
-}
+// let user = {
+//     name: "John",
+//     age: 45
+// }
 
-console.log(user.name);
-console.log(user.hasOwnProperty("email"));
+// console.log(user.name);
+// console.log(user.hasOwnProperty("email"));
+
+//es6
+class Person {
+    constructor(name) {
+      this.name = name;
+    }
+    sayHello() {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+  }
