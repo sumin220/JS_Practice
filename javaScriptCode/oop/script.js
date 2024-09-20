@@ -50,11 +50,32 @@
 // console.log(user.hasOwnProperty("email"));
 
 //es6
-class Person {
-    constructor(name) {
-      this.name = name;
+// class Person {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//     sayHello() {
+//       console.log(`Hello, my name is ${this.name}`);
+//     }
+//   }
+
+
+class Person{
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
     }
-    sayHello() {
-      console.log(`Hello, my name is ${this.name}`);
+
+    introduce() {
+        return 'Hello my name is ${this.name}';
     }
-  }
+}
+
+class Client extends Person {
+    constructor(name, email, clientNumber){
+        super(name, email);
+        this.clientNumber = clientNumber;
+    }
+}
+const john = new Client('John', 'john@abc.com','1234');
+john.introduce();
