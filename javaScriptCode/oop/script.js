@@ -60,22 +60,25 @@
 //   }
 
 
-class Person{
-    constructor(name,email){
-        this.name = name;
-        this.email = email;
-    }
+// class Person{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
+//     }
 
-    introduce() {
-        return 'Hello my name is ${this.name}';
-    }
-}
+//     introduce() {
+//         return 'Hello my name is ${this.name}';
+//     }
+// }
 
-class Client extends Person {
-    constructor(name, email, clientNumber){
-        super(name, email);
-        this.clientNumber = clientNumber;
-    }
-}
-const john = new Client('John', 'john@abc.com','1234');
-john.introduce();
+// class Client extends Person {
+//     constructor(name, email, clientNumber){
+//         super(name, email);
+//         this.clientNumber = clientNumber;
+//     }
+// }
+// const john = new Client('John', 'john@abc.com','1234');
+// john.introduce();
+
+const response1 = request('http://localhost:');
+const response2 = request('http://localhost:'. response1);
